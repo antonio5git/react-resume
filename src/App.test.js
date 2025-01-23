@@ -31,3 +31,8 @@ test('renderiza toda la informacion', () => {
   expect(screen.getByText(data.skills[0].name)).toBeInTheDocument(); // SkillsSection
   expect(screen.getByText(data.education[0].degree)).toBeInTheDocument(); // EducationSection
 });
+  expect(screen.getByText(data.info.name)).toBeInTheDocument(); // Header
+  expect(screen.getByText(data.experience[0].company)).toBeInTheDocument(); // ExperienceSection
+  expect(screen.getByText(data.skills[0].name)).toBeInTheDocument(); // SkillsSection
+  expect(screen.getByText(data.education[0].degree)).toBeInTheDocument(); // EducationSection
+});
